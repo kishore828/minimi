@@ -1,0 +1,50 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# next.js
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+AGENTS.md
+
+# environment — never commit secrets
+.env
+.env.local
+.env.*.local
+
+# local database
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# logs
+dev.log
+dev.log.*
+server.log
+*.log
+
+# testing
+coverage/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# sandbox infra (not part of the shipped product)
+.zscripts/
+Caddyfile
+mini-services/
+agent-ctx/
+
+# package manager lockfiles other than npm's canonical package-lock.json
+bun.lock
+bun.lockb
